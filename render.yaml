@@ -9,9 +9,7 @@ services:
     command: "npm run start"
     instanceType: free
     envVars:
-      - key: N8N_BASIC_AUTH_ACTIVE
+      - key: N8N_RUNNERS_ENABLED
         value: "true"
-      - key: N8N_BASIC_AUTH_USER
-        value: "admin"
-      - key: N8N_BASIC_AUTH_PASSWORD
-        value: "yourpassword123"
+      - key: N8N_RUNNERS_MODE
+        value: "internal"
